@@ -40,7 +40,7 @@ export default function EmployeesPage() {
               👤
             </div>
             <h2 className="text-xl font-semibold text-slate-800">{emp.name}</h2>
-            <p className="text-blue-600 text-sm font-medium mt-1 mb-3 italic">
+            <p className="text-brand text-sm font-medium mt-1 mb-3 italic">
               {emp.title}
             </p>
             <p className="text-slate-500 text-sm leading-relaxed">{emp.bio}</p>

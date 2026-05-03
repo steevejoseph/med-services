@@ -6,4 +6,13 @@
 
 @theme inline {
   --font-sans: var(--font-geist);
+
+  /* Brand colors from business card */
+  --color-brand: #6B21A8;
+  --color-brand-dark: #1E0A3C;
+  --color-brand-hover: #581C87;
+  --color-brand-border: #A855F7;
+  --color-gold: #C9860A;
+  --color-gold-hover: #A36D08;
+  --color-gold-light: #FEF3C7;
 }

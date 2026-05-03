@@ -40,7 +40,7 @@ export default function CertificatesPage() {
             </div>
             <div className="px-4 py-3 flex items-center justify-between">
               <span className="font-medium text-slate-800 text-sm">{cert.name}</span>
-              <span className="text-xs text-blue-600 group-hover:underline">View PDF</span>
+              <span className="text-xs text-brand group-hover:underline">View PDF</span>
             </div>
           </a>
         ))}
