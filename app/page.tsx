@@ -3,24 +3,10 @@ import GlobeLogo from "@/components/GlobeLogo";
 
 const sections = [
   {
-    href: "/certificates",
-    title: "Certifications",
-    description:
-      "View our compliance certifications and industry credentials that meet healthcare delivery standards.",
-    icon: "🏅",
-  },
-  {
-    href: "/resume",
-    title: "Resume",
-    description:
-      "Learn about our leadership background, operational expertise, and track record in medical logistics.",
-    icon: "📄",
-  },
-  {
     href: "/employees",
     title: "Our Team",
     description:
-      "Meet the qualified professionals responsible for safe, reliable medical device delivery.",
+      "Meet the qualified professionals behind Global Enterprise Solutions & Services LLC — including their résumés, certifications, and credentials.",
     icon: "👥",
   },
 ];
@@ -48,7 +34,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/certificates"
+              href="/employees"
               className="bg-gold hover:bg-gold-hover text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
               View Our Credentials
