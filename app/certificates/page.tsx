@@ -1,15 +1,14 @@
-import PlaceholderBanner from "@/components/PlaceholderBanner";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Certifications | Global Enterprise Solutions & Services LLC",
 };
 
-const placeholderCerts = [
-  { name: "DOT Compliance Certificate", issuer: "Issuing Body", expires: "MM/YYYY" },
-  { name: "Medical Courier Certification", issuer: "Issuing Body", expires: "MM/YYYY" },
-  { name: "HIPAA Training Completion", issuer: "Issuing Body", expires: "MM/YYYY" },
-  { name: "Driver Qualification Certificate", issuer: "Issuing Body", expires: "MM/YYYY" },
+const certs = [
+  { name: "HIPAA Training (ID)", file: "/pdfs/id_hippa.pdf" },
+  { name: "Bloodborne Pathogen (ID)", file: "/pdfs/id_bloodborne_pathogen.pdf" },
+  { name: "HIPAA Training (RD)", file: "/pdfs/rd_hippa.pdf" },
+  { name: "Bloodborne Pathogen (RD)", file: "/pdfs/rd_bloodborne_pathogen.pdf" },
 ];
 
 export default function CertificatesPage() {
@@ -21,30 +20,29 @@ export default function CertificatesPage() {
         professional medical device delivery.
       </p>
 
-      <PlaceholderBanner section="Certification" />
-
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {placeholderCerts.map((cert) => (
-          <div
-            key={cert.name}
-            className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm"
+        {certs.map((cert) => (
+          <a
+            key={cert.file}
+            href={cert.file}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow group"
           >
-            <div className="flex items-start gap-4">
-              <div className="text-3xl mt-1">📋</div>
-              <div>
-                <h3 className="font-semibold text-slate-800">{cert.name}</h3>
-                <p className="text-slate-500 text-sm mt-1">
-                  Issued by: <span className="text-slate-400 italic">{cert.issuer}</span>
-                </p>
-                <p className="text-slate-500 text-sm">
-                  Expires: <span className="text-slate-400 italic">{cert.expires}</span>
-                </p>
-                <div className="mt-3 inline-flex items-center gap-1.5 bg-slate-100 text-slate-500 text-xs px-3 py-1 rounded-full italic">
-                  Document to be uploaded
-                </div>
-              </div>
+            <div className="relative w-full h-64 overflow-hidden bg-slate-50">
+              <iframe
+                src={cert.file}
+                className="absolute top-0 left-0 w-[200%] h-[200%] pointer-events-none"
+                style={{ transform: "scale(0.5)", transformOrigin: "0 0" }}
+                title={cert.name}
+              />
+              <div className="absolute inset-0 bg-transparent group-hover:bg-black/5 transition-colors" />
             </div>
-          </div>
+            <div className="px-4 py-3 flex items-center justify-between">
+              <span className="font-medium text-slate-800 text-sm">{cert.name}</span>
+              <span className="text-xs text-blue-600 group-hover:underline">View PDF</span>
+            </div>
+          </a>
         ))}
       </div>
     </div>
