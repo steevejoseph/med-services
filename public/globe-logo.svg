@@ -1,0 +1,54 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="globe-fill" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#6b9eed"/>
+      <stop offset="60%" stop-color="#2a5bbf"/>
+      <stop offset="100%" stop-color="#0f2a6b"/>
+    </radialGradient>
+    <!-- Clip the front arc of the ring to the lower half -->
+    <clipPath id="ring-front">
+      <rect x="-10" y="50" width="120" height="60"/>
+    </clipPath>
+    <!-- Clip grid lines to the globe circle -->
+    <clipPath id="globe-area">
+      <circle cx="50" cy="50" r="37"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ring: back portion (drawn first — globe will cover the overlapping part) -->
+  <ellipse cx="50" cy="50" rx="51" ry="14"
+    fill="none" stroke="#b87800" stroke-width="5" stroke-linecap="round"
+    transform="rotate(-22 50 50)"/>
+
+  <!-- Globe body -->
+  <circle cx="50" cy="50" r="37" fill="url(#globe-fill)"/>
+
+  <!-- Latitude lines -->
+  <g clip-path="url(#globe-area)" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="0.9">
+    <ellipse cx="50" cy="32" rx="26" ry="7"/>
+    <ellipse cx="50" cy="50" rx="37" ry="10"/>
+    <ellipse cx="50" cy="68" rx="26" ry="7"/>
+  </g>
+
+  <!-- Longitude lines -->
+  <g clip-path="url(#globe-area)" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="0.9">
+    <line x1="50" y1="13" x2="50" y2="87"/>
+    <ellipse cx="50" cy="50" rx="13" ry="37"/>
+    <ellipse cx="50" cy="50" rx="26" ry="37"/>
+  </g>
+
+  <!-- Globe edge highlight -->
+  <circle cx="50" cy="50" r="37" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+
+  <!-- Ring: front portion (on top of globe, lower half only) -->
+  <ellipse cx="50" cy="50" rx="51" ry="14"
+    fill="none" stroke="#d4920a" stroke-width="5" stroke-linecap="round"
+    transform="rotate(-22 50 50)"
+    clip-path="url(#ring-front)"/>
+
+  <!-- Ring highlight: front, gives metallic sheen -->
+  <ellipse cx="50" cy="50" rx="51" ry="14"
+    fill="none" stroke="rgba(255,220,100,0.55)" stroke-width="2"
+    transform="rotate(-22 50 50)"
+    clip-path="url(#ring-front)"/>
+</svg>

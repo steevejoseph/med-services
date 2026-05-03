@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GlobeLogo from "@/components/GlobeLogo";
 
 const sections = [
   {
@@ -30,6 +31,9 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-brand-dark text-white py-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <GlobeLogo size={80} />
+          </div>
           <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">
             Medical Device Delivery Services
           </p>

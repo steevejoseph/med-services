@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import GlobeLogo from "./GlobeLogo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -16,7 +17,8 @@ export default function Nav() {
   return (
     <header className="bg-brand-dark text-white shadow-md">
       <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <Link href="/" className="text-center sm:text-left">
+        <Link href="/" className="flex items-center gap-3 text-center sm:text-left">
+          <GlobeLogo size={40} />
           <span className="text-lg font-semibold tracking-tight leading-tight">
             Global Enterprise Solutions &amp; Services LLC
           </span>
