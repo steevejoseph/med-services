@@ -140,11 +140,12 @@ function CertsContent({ certs }: { certs: Cert[] }) {
 
 type Section = "resume" | "certs";
 
-export default function EmployeeCard({ name, title, resume, certs }: {
+export default function EmployeeCard({ name, title, resume, certs, photo }: {
   name: string;
   title: string;
   resume: ResumeData | null;
   certs: Cert[];
+  photo?: string;
 }) {
   const [open, setOpen] = useState<Section | null>(null);
   const toggle = (s: Section) => setOpen(prev => prev === s ? null : s);
@@ -152,9 +153,17 @@ export default function EmployeeCard({ name, title, resume, certs }: {
   return (
     <div className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
       <div className="p-6 flex items-center gap-4">
-        <div className="w-16 h-16 rounded-full bg-purple-50 border-2 border-brand-border flex items-center justify-center text-2xl shrink-0 text-slate-400">
-          👤
-        </div>
+        {photo ? (
+          <img
+            src={photo}
+            alt={name}
+            className="w-16 h-16 rounded-full object-cover border-2 border-brand-border shrink-0"
+          />
+        ) : (
+          <div className="w-16 h-16 rounded-full bg-purple-50 border-2 border-brand-border flex items-center justify-center text-2xl shrink-0 text-slate-400">
+            👤
+          </div>
+        )}
         <div>
           <h2 className="text-xl font-semibold text-slate-800">{name}</h2>
           <p className="text-brand text-sm font-medium">{title}</p>
@@ -180,20 +189,22 @@ export default function EmployeeCard({ name, title, resume, certs }: {
           )}
         </div>
 
-        <div>
-          <button
-            onClick={() => toggle("certs")}
-            className="w-full flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition-colors text-left"
-          >
-            <span className="font-medium text-slate-700">Certificates</span>
-            <Chevron open={open === "certs"} />
-          </button>
-          {open === "certs" && (
-            <div className="px-6 pb-6">
-              <CertsContent certs={certs} />
-            </div>
-          )}
-        </div>
+        {certs.length > 0 && (
+          <div>
+            <button
+              onClick={() => toggle("certs")}
+              className="w-full flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition-colors text-left"
+            >
+              <span className="font-medium text-slate-700">Certificates</span>
+              <Chevron open={open === "certs"} />
+            </button>
+            {open === "certs" && (
+              <div className="px-6 pb-6">
+                <CertsContent certs={certs} />
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
