@@ -6,6 +6,7 @@ import GlobeLogo from "./GlobeLogo";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
   { href: "/employees", label: "Our Team" },
 ];
 
