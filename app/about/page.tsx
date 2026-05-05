@@ -9,7 +9,7 @@ const values = [
     icon: "🛡️",
     title: "Compliance",
     description:
-      "Every delivery is executed within the regulatory framework that healthcare demands — HIPAA-aware operations, credentialed staff, and documented procedures at every step.",
+      "Every delivery is executed within the regulatory framework that healthcare demands — HIPAA and Bloodborne Pathogen aware operations, credentialed staff, and documented procedures at every step.",
   },
   {
     icon: "⏱️",
@@ -72,17 +72,18 @@ export default function AboutPage() {
               Global Enterprise Solutions &amp; Services LLC is a specialized
               medical courier and logistics company based in Winter Garden,
               Florida. We provide last-mile delivery of critical healthcare
-              materials — including medical specimens, pharmaceuticals, supplies,
-              and sensitive healthcare equipment — to hospitals and health
-              providers across the region.
+              materials — including medical specimens, pharmaceuticals,
+              supplies, and sensitive healthcare equipment — to hospitals and
+              health providers across the region.
             </p>
             <p>
               Founded on a commitment to compliance and operational excellence,
-              we bring decades of professional transportation experience to every
-              engagement. Our team holds active CDL Class A licenses, Hazmat and
-              Tanker endorsements, TWIC cards, and HIPAA and OSHA certifications
-              — credentials that meet the rigorous standards healthcare
-              organizations require from their logistics partners.
+              we bring decades of professional transportation experience to
+              every engagement. Our team holds active CDL Class A licenses,
+              Hazmat and Tanker endorsements, TWIC cards, and HIPAA, Bloodborne
+              Pathogen, and OSHA certifications — credentials that meet the
+              rigorous standards healthcare organizations require from their
+              logistics partners.
             </p>
             <p>
               Whether the delivery is routine or time-critical, we operate with
@@ -103,7 +104,9 @@ export default function AboutPage() {
             <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">
               What Drives Us
             </p>
-            <h2 className="text-2xl font-bold text-slate-800">Our Core Values</h2>
+            <h2 className="text-2xl font-bold text-slate-800">
+              Our Core Values
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -114,7 +117,9 @@ export default function AboutPage() {
               >
                 <div className="text-3xl mb-3">{icon}</div>
                 <h3 className="font-semibold text-slate-800 mb-2">{title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  {description}
+                </p>
               </div>
             ))}
           </div>
@@ -127,7 +132,8 @@ export default function AboutPage() {
           Ready to evaluate us as a logistics partner?
         </p>
         <p className="text-purple-200 text-sm mb-6">
-          Review our team credentials, certifications, and professional background.
+          Review our team credentials, certifications, and professional
+          background.
         </p>
         <a
           href="/employees"

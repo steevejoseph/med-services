@@ -1,5 +1,4 @@
 import Link from "next/link";
-import GlobeLogo from "@/components/GlobeLogo";
 
 const sections = [
   {
@@ -15,10 +14,19 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-dark text-white py-24 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <div className="flex justify-center mb-6">
-            <GlobeLogo size={80} />
+      <section
+        className="relative text-white py-24 px-6 text-center"
+        style={{
+          backgroundImage: "url('/assets/stock-truck-image.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-brand-dark/75" />
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <div className="flex justify-center mb-8">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/assets/globe-crop.png" alt="Global Enterprises" className="w-36 rounded-full shadow-2xl" />
           </div>
           <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">
             Medical Device Delivery Services
@@ -27,10 +35,9 @@ export default function HomePage() {
             Reliable. Credentialed. Ready.
           </h1>
           <p className="text-purple-200 text-lg leading-relaxed mb-10">
-            Global Enterprise Solutions &amp; Services LLC provides professional
-            last-mile delivery of medical devices and supplies to hospitals and
-            health providers — with full transparency on credentials and
-            compliance.
+            We provide professional last-mile delivery of medical devices and
+            supplies to hospitals and health providers — with full transparency
+            on credentials and compliance.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -53,7 +60,10 @@ export default function HomePage() {
       <section className="bg-brand text-white py-10 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {[
-            { stat: "HIPAA Aware", label: "Compliance-focused operations" },
+            {
+              stat: "HIPAA & BBP Aware",
+              label: "Compliance-focused operations",
+            },
             { stat: "On-Demand", label: "Flexible scheduling for facilities" },
             { stat: "Vetted Staff", label: "Background-checked personnel" },
           ].map(({ stat, label }) => (
@@ -98,9 +108,9 @@ export default function HomePage() {
             Built for healthcare procurement teams
           </h2>
           <p className="text-slate-500 leading-relaxed">
-            When evaluating a delivery partner, you need more than a pitch —
-            you need documentation. This site exists so that everything a
-            compliance or procurement officer needs is one click away.
+            When evaluating a delivery partner, you need more than a pitch — you
+            need documentation. This site exists so that everything a compliance
+            or procurement officer needs is one click away.
           </p>
         </div>
       </section>

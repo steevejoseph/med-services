@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import GlobeLogo from "./GlobeLogo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -16,11 +15,9 @@ export default function Nav() {
   return (
     <header className="bg-brand-dark text-white shadow-md">
       <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3 text-center sm:text-left">
-          <GlobeLogo size={40} />
-          <span className="text-lg font-semibold tracking-tight leading-tight">
-            Global Enterprise Solutions &amp; Services LLC
-          </span>
+        <Link href="/" className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/globe-crop.png" alt="Global Enterprises" className="h-10 w-10 rounded-full object-cover" />
         </Link>
         <nav className="flex gap-1">
           {links.map(({ href, label }) => (

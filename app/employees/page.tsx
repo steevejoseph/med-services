@@ -84,6 +84,13 @@ const employees = [
     resume: null,
     certs: [],
   },
+  {
+    name: "Rafeeza Dastajir",
+    title: "Logistics Specialist",
+    photo: undefined,
+    resume: null,
+    certs: [],
+  },
 ];
 
 export default function EmployeesPage() {
