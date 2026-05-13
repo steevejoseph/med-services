@@ -64,17 +64,23 @@ const employees = [
     resume: imranResume,
     certs: [
       { name: "HIPAA Training", file: "/pdfs/id_hippa_imran.pdf" },
-      { name: "Bloodborne Pathogen", file: "/pdfs/id_bloodborne_pathogen_imran.pdf" },
+      {
+        name: "Bloodborne Pathogen",
+        file: "/pdfs/id_bloodborne_pathogen_imran.pdf",
+      },
     ],
   },
   {
     name: "Ruqaiyah Dastajir",
-    title: "Logistics Specialist",
+    title: "Medical Courier / Logistics Specialist",
     photo: "/assets/photos/ruqaiyah.png",
     resume: null,
     certs: [
       { name: "HIPAA Training", file: "/pdfs/rd_hippa_ruqaiyah.pdf" },
-      { name: "Bloodborne Pathogen", file: "/pdfs/rd_bloodborne_pathogen_ruqaiyah.pdf" },
+      {
+        name: "Bloodborne Pathogen",
+        file: "/pdfs/rd_bloodborne_pathogen_ruqaiyah.pdf",
+      },
     ],
   },
   {
