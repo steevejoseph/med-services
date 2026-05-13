@@ -17,7 +17,7 @@ export default function HomePage() {
       <section
         className="relative text-white py-24 px-6 text-center"
         style={{
-          backgroundImage: "url('/assets/stock-truck-image.jpg')",
+          backgroundImage: "url('/assets/truck-and-globe.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -25,8 +25,12 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-brand-dark/75" />
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="flex justify-center mb-8">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/globe-crop.png" alt="Global Enterprises" className="w-36 rounded-full shadow-2xl" />
+            {}
+            {/* <img
+              src="/assets/globe-trans-bg.png"
+              alt="Global Enterprises"
+              className="w-36 rounded-full shadow-2xl"
+            /> */}
           </div>
           <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">
             Medical Device Delivery Services

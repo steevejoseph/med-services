@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
   { href: "/employees", label: "Our Team" },
 ];
 
@@ -17,7 +18,14 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/assets/globe-crop.png" alt="Global Enterprises" className="h-10 w-10 rounded-full object-cover" />
+          <img
+            src="/assets/globe-trans-bg.png"
+            alt="Global Enterprises"
+            className="h-10 w-10 rounded-full object-cover"
+          />
+          <span className="text-lg font-semibold tracking-tight leading-tight">
+            Global Enterprise Solutions &amp; Services LLC
+          </span>
         </Link>
         <nav className="flex gap-1">
           {links.map(({ href, label }) => (
