@@ -3,7 +3,6 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-
 **Global Enterprise Solutions & Services LLC** — a medical device delivery service (think Uber for medical supplies/devices, serving hospitals and health providers). The website's primary purpose is as a credential showcase: when pitching to hospitals, the client directs them to the site to verify credentials.
 
 ## Commands

@@ -93,7 +93,7 @@ const employees = [
   {
     name: "Rafeeza Dastajir",
     title: "Logistics Specialist",
-    photo: undefined,
+    photo: "/assets/photos/rafeeza.png",
     resume: null,
     certs: [],
   },
