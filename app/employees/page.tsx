@@ -171,17 +171,17 @@ const employees = [
     ],
   },
   {
-    name: "Abed Syed",
-    title: "Logistics Specialist",
-    photo: "/assets/photos/abed.png",
-    resume: null,
-    certs: [],
-  },
-  {
     name: "Rafeeza Dastajir",
     title: "Logistics Specialist",
     photo: "/assets/photos/rafeeza.png",
     resume: rafeezaResume,
+    certs: [],
+  },
+  {
+    name: "Abed Syed",
+    title: "Logistics Specialist",
+    photo: "/assets/photos/abed.png",
+    resume: null,
     certs: [],
   },
 ];
