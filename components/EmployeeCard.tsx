@@ -16,7 +16,7 @@ export type ResumeData = {
   experience: Experience[];
   skills: string[];
   licenses: string[];
-  education: { degree: string; school: string; location: string };
+  education: { degree: string; school: string; location: string }[];
   downloadUrl?: string;
 };
 
@@ -100,9 +100,15 @@ function ResumeContent({ resume }: { resume: ResumeData }) {
 
       <div>
         <h4 className="text-xs font-semibold text-brand uppercase tracking-wider mb-2">Education</h4>
-        <p className="text-slate-800 text-sm font-medium">{resume.education.degree}</p>
-        <p className="text-slate-500 text-sm">{resume.education.school}</p>
-        <p className="text-slate-400 text-sm">{resume.education.location}</p>
+        <div className="space-y-3">
+          {resume.education.map((ed) => (
+            <div key={ed.school}>
+              <p className="text-slate-800 text-sm font-medium">{ed.degree}</p>
+              <p className="text-slate-500 text-sm">{ed.school}</p>
+              <p className="text-slate-400 text-sm">{ed.location}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -29,8 +29,8 @@ const contactFields = [
   {
     icon: "🌐",
     label: "Website",
-    value: "www.example.com",
-    href: "https://www.example.com",
+    value: "www.globalenterprises.io",
+    href: "https://www.globalenterprises.io/",
   },
   {
     icon: "📱",

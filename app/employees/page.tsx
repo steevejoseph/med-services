@@ -48,12 +48,99 @@ const imranResume: ResumeData = {
     "OSHA Bloodborne Pathogens",
     "HIPAA Training",
   ],
-  education: {
-    degree: "High School Diploma",
-    school: "Cornerstone Christian Correspondence School",
-    location: "Townsend, Georgia",
-  },
+  education: [
+    {
+      degree: "High School Diploma",
+      school: "Cornerstone Christian Correspondence School",
+      location: "Townsend, Georgia",
+    },
+  ],
   downloadUrl: "/assets/imran-dastajir-resume.pdf",
+};
+
+const ruqaiyahResume: ResumeData = {
+  summary:
+    "Detail-oriented professional with customer service, administrative, and logistics experience. Holds HIPAA, OSHA Bloodborne Pathogen, TWIC Card, and Smith System Defensive Driving credentials. Demonstrated ability to balance multiple responsibilities, having completed college coursework simultaneously with high school.",
+  experience: [
+    {
+      period: "01/2025 – Present",
+      role: "Customer Service Associate",
+      company: "Walmart – Winter Garden, FL",
+      bullets: [
+        "Assist customers with returns and financial services at the customer service desk.",
+        "Support cashiers in resolving point-of-sale issues and ensuring smooth operations.",
+      ],
+    },
+    {
+      period: "05/2024 – 12/2024",
+      role: "Office Assistant",
+      company: "Max Realty & Consulting LLC – Winter Garden, FL",
+      bullets: [
+        "Organized and filed client documents, maintaining accurate records.",
+      ],
+    },
+  ],
+  skills: [
+    "Customer Service", "Document Management", "Financial Services",
+    "Time Management", "Team Collaboration", "HIPAA Compliance",
+    "OSHA Bloodborne Pathogen", "Defensive Driving",
+  ],
+  licenses: [
+    "HIPAA Certificate",
+    "OSHA Bloodborne Pathogen",
+    "TWIC Card",
+    "Smith System Defensive Driving",
+  ],
+  education: [
+    {
+      degree: "Associate of Arts (A.A.)",
+      school: "Valencia College",
+      location: "Orlando, FL — Aug 2023 – Apr 2025",
+    },
+    {
+      degree: "High School Diploma",
+      school: "West Orange High School",
+      location: "Winter Garden, FL — Aug 2021 – May 2025",
+    },
+  ],
+  downloadUrl: "/assets/ruqaiyah-dastajir-resume.pdf",
+};
+
+const rafeezaResume: ResumeData = {
+  summary:
+    "Dedicated professional with over five years of experience in nutrition services within Orange County Public Schools, ensuring individuals receive meals tailored to specific health requirements. Background in household operations management and community leadership.",
+  experience: [
+    {
+      period: "08/2020 – Present",
+      role: "Nutrition Associate",
+      company: "Orange County Public School – Orlando, FL",
+      bullets: [
+        "Ensure individuals receive accurate meals based on their specific health requirements.",
+      ],
+    },
+    {
+      period: "11/2003 – 08/2020",
+      role: "Home Manager",
+      company: "",
+      bullets: [
+        "Managed household finances and daily operations.",
+        "Coached son's soccer team for three years, developing team leadership skills.",
+      ],
+    },
+  ],
+  skills: [
+    "Nutrition Services", "Health Compliance", "Operations Management",
+    "Team Leadership", "Community Engagement",
+  ],
+  licenses: [],
+  education: [
+    {
+      degree: "High School (attended)",
+      school: "Queens New York High School",
+      location: "New York, NY — Sep 1995 – Dec 1998",
+    },
+  ],
+  downloadUrl: "/assets/rafeeza-dastajir-resume.pdf",
 };
 
 const employees = [
@@ -74,7 +161,7 @@ const employees = [
     name: "Ruqaiyah Dastajir",
     title: "Medical Courier / Logistics Specialist",
     photo: "/assets/photos/ruqaiyah.png",
-    resume: null,
+    resume: ruqaiyahResume,
     certs: [
       { name: "HIPAA Training", file: "/pdfs/rd_hippa_ruqaiyah.pdf" },
       {
@@ -94,7 +181,7 @@ const employees = [
     name: "Rafeeza Dastajir",
     title: "Logistics Specialist",
     photo: "/assets/photos/rafeeza.png",
-    resume: null,
+    resume: rafeezaResume,
     certs: [],
   },
 ];
