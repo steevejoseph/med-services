@@ -146,7 +146,7 @@ const rafeezaResume: ResumeData = {
 const employees = [
   {
     name: "Imran Dastajir",
-    title: "Medical Courier / Logistics Specialist",
+    title: "Managing Director",
     photo: "/assets/photos/imran.png",
     resume: imranResume,
     certs: [
@@ -158,8 +158,8 @@ const employees = [
     ],
   },
   {
-    name: "Ruqaiyah Dastajir",
-    title: "Medical Courier / Logistics Specialist",
+    name: "Ruqaiyah",
+    title: "Operations Manager",
     photo: "/assets/photos/ruqaiyah.png",
     resume: ruqaiyahResume,
     certs: [
@@ -171,19 +171,27 @@ const employees = [
     ],
   },
   {
-    name: "Rafeeza Dastajir",
-    title: "Logistics Specialist",
-    photo: "/assets/photos/rafeeza.png",
+    name: "Rafeeza",
+    title: "HR Manager",
+    photo: "/assets/photos/rafeeza2.png",
     resume: rafeezaResume,
     certs: [],
   },
   {
     name: "Abed Syed",
-    title: "Logistics Specialist",
+    title: "District Sales Manager",
     photo: "/assets/photos/abed.png",
     resume: null,
     certs: [],
   },
+  {
+    name: "Ismaiel Dastajir",
+    title: "Logistics Manager",
+    photo: null,
+    resume: null,
+    certs: [],
+  },
+  ,
 ];
 
 export default function EmployeesPage() {
