@@ -187,11 +187,10 @@ const employees = [
   {
     name: "Ismaiel Dastajir",
     title: "Logistics Manager",
-    photo: null,
+    photo: undefined,
     resume: null,
     certs: [],
   },
-  ,
 ];
 
 export default function EmployeesPage() {
