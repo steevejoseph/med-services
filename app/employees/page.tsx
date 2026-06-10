@@ -158,7 +158,21 @@ const employees = [
     ],
   },
   {
-    name: "Ruqaiyah",
+    name: "Abed Syed",
+    title: "District Sales Manager",
+    photo: "/assets/photos/abed.png",
+    resume: null,
+    certs: [],
+  },
+  {
+    name: "Ismaiel Dastajir",
+    title: "Logistics Manager",
+    photo: undefined,
+    resume: null,
+    certs: [],
+  },
+  {
+    name: "Ruqaiyah R.",
     title: "Operations Manager",
     photo: "/assets/photos/ruqaiyah.png",
     resume: ruqaiyahResume,
@@ -171,24 +185,10 @@ const employees = [
     ],
   },
   {
-    name: "Rafeeza",
+    name: "Rafeeza D.",
     title: "HR Manager",
     photo: "/assets/photos/rafeeza2.png",
     resume: rafeezaResume,
-    certs: [],
-  },
-  {
-    name: "Abed Syed",
-    title: "District Sales Manager",
-    photo: "/assets/photos/abed.png",
-    resume: null,
-    certs: [],
-  },
-  {
-    name: "Ismaiel Dastajir",
-    title: "Logistics Manager",
-    photo: undefined,
-    resume: null,
     certs: [],
   },
 ];
