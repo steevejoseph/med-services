@@ -4,7 +4,8 @@
       "Bash(mv CLAUDE.md /tmp/CLAUDE.md.bak)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --no-turbopack)",
       "Bash(node scripts/extract-id-photos.mjs)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "WebFetch(domain:www.floridacouriers.com)"
     ]
   }
 }
