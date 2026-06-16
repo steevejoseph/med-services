@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Global Enterprise Solutions & Services LLC",
+  title: "Contact Us | Global Enterprises Solutions & Services LLC",
 };
 
 export default function ContactPage() {

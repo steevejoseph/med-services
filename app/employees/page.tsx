@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import EmployeeCard from "@/components/EmployeeCard";
 
 export const metadata: Metadata = {
-  title: "Team | Global Enterprise Solutions & Services LLC",
+  title: "Team | Global Enterprises Solutions & Services LLC",
 };
 
 const employees = [
@@ -11,11 +11,14 @@ const employees = [
     title: "Managing Director",
     photo: "/assets/photos/imran.png",
     introduction:
-      "Imran founded Global Enterprise Solutions & Services LLC on more than 25 years of hands-on logistics experience. He holds a CDL Class A license with Hazmat and Tanker endorsements and a TWIC card, and built his career across long-haul Hazmat transport at Clean Venture (NJ) and over two decades of safe freight operations with Mondelez International throughout Florida. His HIPAA certification and OSHA Bloodborne Pathogen training position him to lead a courier operation where compliance and patient-safety accountability are non-negotiable.",
+      "Imran founded Global Enterprises Solutions & Services LLC on more than 25 years of hands-on logistics experience. He holds a CDL Class A license with Hazmat and Tanker endorsements and a TWIC card, and built his career across long-haul Hazmat transport at Clean Venture (NJ) and over two decades of safe freight operations with Mondelez International throughout Florida. His HIPAA certification and OSHA Bloodborne Pathogen training position him to lead a courier operation where compliance and patient-safety accountability are non-negotiable.",
     downloadUrl: "/assets/imran-dastajir-resume.pdf",
     certs: [
       { name: "HIPAA Training", file: "/pdfs/id_hippa_imran.pdf" },
-      { name: "Bloodborne Pathogen", file: "/pdfs/id_bloodborne_pathogen_imran.pdf" },
+      {
+        name: "Bloodborne Pathogen",
+        file: "/pdfs/id_bloodborne_pathogen_imran.pdf",
+      },
     ],
   },
   {
@@ -23,7 +26,7 @@ const employees = [
     title: "District Sales Manager",
     photo: "/assets/photos/abed.png",
     introduction:
-      "Abed leads business development and client partnerships for Global Enterprise Solutions & Services LLC across Central Florida. He brings a results-driven approach to building relationships with hospital procurement teams and healthcare facilities, ensuring they understand the compliance standards and service reliability that set GESS apart.",
+      "Abed leads business development and client partnerships for Global Enterprises Solutions & Services LLC across Central Florida. He brings a results-driven approach to building relationships with hospital procurement teams and healthcare facilities, ensuring they understand the compliance standards and service reliability that set GESS apart.",
     downloadUrl: undefined,
     certs: [],
   },
@@ -45,7 +48,10 @@ const employees = [
     downloadUrl: "/assets/ruqaiyah-dastajir-resume.pdf",
     certs: [
       { name: "HIPAA Training", file: "/pdfs/rd_hippa_ruqaiyah.pdf" },
-      { name: "Bloodborne Pathogen", file: "/pdfs/rd_bloodborne_pathogen_ruqaiyah.pdf" },
+      {
+        name: "Bloodborne Pathogen",
+        file: "/pdfs/rd_bloodborne_pathogen_ruqaiyah.pdf",
+      },
     ],
   },
   {
@@ -64,7 +70,8 @@ export default function EmployeesPage() {
     <div className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold text-slate-800 mb-2">Our Team</h1>
       <p className="text-slate-500 mb-10">
-        Meet the qualified professionals behind Global Enterprise Solutions &amp; Services LLC.
+        Meet the qualified professionals behind Global Enterprises Solutions
+        &amp; Services LLC.
       </p>
 
       <div className="space-y-6">

@@ -9,7 +9,7 @@ const nav = [
     icon: "ℹ️",
     title: "About Us",
     description:
-      "Our mission, values, and what makes Global Enterprise Solutions & Services LLC a trusted healthcare logistics partner.",
+      "Our mission, values, and what makes Global Enterprises Solutions & Services LLC a trusted healthcare logistics partner.",
   },
   {
     href: "/services",
@@ -55,10 +55,11 @@ export default function HomePage() {
             Reliable. Credentialed. Ready.
           </h1>
           <p className="text-purple-200 text-lg leading-relaxed mb-10">
-            Global Enterprise Solutions &amp; Services LLC provides professional
-            same day delivery of medical devices, specimens, pharmaceuticals,
-            and more — serving hospitals and health providers across Central
-            Florida with full transparency on credentials and compliance.
+            Global Enterprises Solutions &amp; Services LLC provides
+            professional same day delivery of medical devices, specimens,
+            pharmaceuticals, and more — serving hospitals and health providers
+            across Central Florida with full transparency on credentials and
+            compliance.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -81,7 +82,10 @@ export default function HomePage() {
       <section className="bg-brand text-white py-10 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {[
-            { stat: "HIPAA & BBP Aware", label: "Compliance-focused operations" },
+            {
+              stat: "HIPAA & BBP Aware",
+              label: "Compliance-focused operations",
+            },
             { stat: "On-Demand", label: "Flexible scheduling for facilities" },
             { stat: "Vetted Staff", label: "Background-checked personnel" },
           ].map(({ stat, label }) => (
@@ -140,8 +144,8 @@ export default function HomePage() {
           </h2>
           <p className="text-slate-500 text-sm text-center mb-12 max-w-xl mx-auto">
             When evaluating a delivery partner, you need more than a pitch. This
-            site puts every credential, certificate, and contact detail one click
-            away.
+            site puts every credential, certificate, and contact detail one
+            click away.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {nav.map(({ href, icon, title, description }) => (
@@ -168,8 +172,8 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold mb-3">Schedule a Delivery Today</h2>
         <p className="text-purple-200 text-sm mb-8 max-w-xl mx-auto">
           Available on-demand for hospitals and healthcare providers across
-          Central Florida. Call us or send a message and we&rsquo;ll be in
-          touch promptly.
+          Central Florida. Call us or send a message and we&rsquo;ll be in touch
+          promptly.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a

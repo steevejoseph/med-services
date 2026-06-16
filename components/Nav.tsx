@@ -25,7 +25,7 @@ export default function Nav() {
             className="h-10 w-10 rounded-full object-cover"
           />
           <span className="text-lg font-semibold tracking-tight leading-tight">
-            Global Enterprise Solutions &amp; Services LLC
+            Global Enterprises Solutions &amp; Services LLC
           </span>
         </Link>
         <nav className="flex gap-1">

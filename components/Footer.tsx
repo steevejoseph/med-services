@@ -27,7 +27,6 @@ export default function Footer() {
   return (
     <footer className="bg-brand-dark text-purple-300 text-sm mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-10">
-
         {/* Brand column */}
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -37,7 +36,7 @@ export default function Footer() {
             className="h-12 w-12 rounded-full object-cover mb-4"
           />
           <p className="text-purple-200 font-semibold mb-2">
-            Global Enterprise Solutions &amp; Services LLC
+            Global Enterprises Solutions &amp; Services LLC
           </p>
           <p className="text-purple-400 leading-relaxed text-xs">
             Our Central Florida–based medical courier and same day delivery
@@ -46,12 +45,18 @@ export default function Footer() {
           </p>
           <div className="mt-4 space-y-1 text-xs text-purple-400">
             <p>
-              <a href="tel:3216896776" className="hover:text-white transition-colors">
+              <a
+                href="tel:3216896776"
+                className="hover:text-white transition-colors"
+              >
                 📱 (321) 689-6776
               </a>
             </p>
             <p>
-              <a href="mailto:iglobalproworks@gmail.com" className="hover:text-white transition-colors">
+              <a
+                href="mailto:iglobalproworks@gmail.com"
+                className="hover:text-white transition-colors"
+              >
                 ✉️ iglobalproworks@gmail.com
               </a>
             </p>
@@ -84,11 +89,22 @@ export default function Footer() {
       <div className="border-t border-purple-900 px-6 py-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-purple-500">
           <p>
-            &copy; {new Date().getFullYear()} Global Enterprise Solutions &amp; Services LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} Global Enterprises Solutions &amp;
+            Services LLC. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
-            <Link href="/services" className="hover:text-white transition-colors">Services</Link>
+            <Link
+              href="/contact"
+              className="hover:text-white transition-colors"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/services"
+              className="hover:text-white transition-colors"
+            >
+              Services
+            </Link>
           </div>
         </div>
       </div>

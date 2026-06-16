@@ -16,7 +16,7 @@ export async function generateMetadata({
   const svc = getService(slug);
   if (!svc) return {};
   return {
-    title: `${svc.title} | Global Enterprise Solutions & Services LLC`,
+    title: `${svc.title} | Global Enterprises Solutions & Services LLC`,
   };
 }
 
@@ -76,7 +76,9 @@ export default async function ServiceDetailPage({
       {/* What we deliver */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">What We Deliver</h2>
+          <h2 className="text-2xl font-bold text-slate-800 mb-4">
+            What We Deliver
+          </h2>
           <p className="text-slate-500 leading-relaxed mb-10 max-w-2xl">
             {svc.deliverablesIntro}
           </p>
@@ -87,7 +89,9 @@ export default async function ServiceDetailPage({
                 className="flex flex-col items-center justify-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-4 py-6 text-center"
               >
                 <span className="text-3xl">{icon}</span>
-                <span className="text-slate-700 text-sm font-medium">{label}</span>
+                <span className="text-slate-700 text-sm font-medium">
+                  {label}
+                </span>
               </div>
             ))}
           </div>
@@ -140,9 +144,9 @@ export default async function ServiceDetailPage({
       <section className="bg-brand py-14 px-6 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Schedule a Delivery Today</h2>
         <p className="text-purple-200 text-sm mb-8 max-w-xl mx-auto">
-          Schedule a pickup and delivery and see why organizations across Central
-          Florida choose Global Enterprise Solutions &amp; Services LLC for their
-          courier and logistics needs.
+          Schedule a pickup and delivery and see why organizations across
+          Central Florida choose Global Enterprises Solutions &amp; Services LLC
+          for their courier and logistics needs.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a

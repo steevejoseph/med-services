@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 
 export const metadata: Metadata = {
-  title: "Global Enterprise Solutions & Services LLC",
+  title: "Global Enterprises Solutions & Services LLC",
   description:
     "Professional medical device delivery services for hospitals and health providers.",
 };

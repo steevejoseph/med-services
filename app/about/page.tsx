@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Global Enterprise Solutions & Services LLC",
+  title: "About | Global Enterprises Solutions & Services LLC",
 };
 
 const values = [
@@ -69,7 +69,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-slate-800 mb-6">Who We Are</h2>
           <div className="space-y-4 text-slate-600 leading-relaxed">
             <p>
-              Global Enterprise Solutions &amp; Services LLC is a specialized
+              Global Enterprises Solutions &amp; Services LLC is a specialized
               medical courier and logistics company based in Winter Garden,
               Florida. We provide last-mile delivery of critical healthcare
               materials — including medical specimens, pharmaceuticals,

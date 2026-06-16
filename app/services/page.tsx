@@ -3,7 +3,7 @@ import Link from "next/link";
 import { services } from "@/lib/services-data";
 
 export const metadata: Metadata = {
-  title: "Services | Global Enterprise Solutions & Services LLC",
+  title: "Services | Global Enterprises Solutions & Services LLC",
 };
 
 const steps = [
@@ -33,7 +33,7 @@ export default function ServicesPage() {
           <h1 className="text-4xl font-bold mb-5">Our Services</h1>
           <p className="text-purple-200 text-lg leading-relaxed max-w-2xl mx-auto">
             Serving hospitals, businesses, and organizations throughout Central
-            Florida, Global Enterprise Solutions &amp; Services LLC offers same
+            Florida, Global Enterprises Solutions &amp; Services LLC offers same
             day delivery and rush courier services to fit all your delivery
             needs. Available on-demand for both routine and time-critical
             shipments.
@@ -51,8 +51,12 @@ export default function ServicesPage() {
             >
               <div className="bg-slate-50 px-8 pt-8 pb-6 flex-1">
                 <div className="text-4xl mb-4">{svc.icon}</div>
-                <h2 className="text-xl font-bold text-slate-800 mb-3">{svc.title}</h2>
-                <p className="text-slate-500 text-sm leading-relaxed">{svc.tagline}</p>
+                <h2 className="text-xl font-bold text-slate-800 mb-3">
+                  {svc.title}
+                </h2>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  {svc.tagline}
+                </p>
               </div>
               <div className="px-8 py-5 border-t border-slate-100 bg-white">
                 <Link
@@ -77,9 +81,9 @@ export default function ServicesPage() {
             How It Works
           </h2>
           <p className="text-slate-500 text-sm text-center mb-12 max-w-xl mx-auto">
-            Global Enterprise Solutions &amp; Services LLC provides a broad range
-            of same day delivery and rush courier services, available on-demand to
-            serve your needs. Here&rsquo;s how it works:
+            Global Enterprises Solutions &amp; Services LLC provides a broad
+            range of same day delivery and rush courier services, available
+            on-demand to serve your needs. Here&rsquo;s how it works:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {steps.map(({ n, title, body }) => (
@@ -99,9 +103,9 @@ export default function ServicesPage() {
       <section className="bg-brand py-14 px-6 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Schedule a Delivery Today</h2>
         <p className="text-purple-200 text-sm mb-8 max-w-xl mx-auto">
-          Schedule a pickup and delivery and see why organizations across Central
-          Florida choose Global Enterprise Solutions &amp; Services LLC for their
-          courier and logistics needs.
+          Schedule a pickup and delivery and see why organizations across
+          Central Florida choose Global Enterprises Solutions &amp; Services LLC
+          for their courier and logistics needs.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
