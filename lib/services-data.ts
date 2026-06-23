@@ -156,6 +156,75 @@ export const services: ServiceItem[] = [
     overview:
       "For facilities that need consistent, predictable delivery service, Global Enterprises Solutions & Services LLC offers customized scheduled route delivery. We work directly with your logistics or operations team to design routes that match your volume, timing, and compliance requirements.\n\nScheduled routes are ideal for hospital systems running daily specimen pickups, pharmacies managing recurring replenishment, and businesses with regular interoffice delivery needs. Our drivers learn your facilities, your contacts, and your protocols — delivering a level of consistency you can count on.\n\nEvery scheduled route includes full delivery documentation and confirmation, giving your compliance and operations teams the records they need. Contact us to discuss how we can build a scheduled route program that works for your organization.",
   },
+  {
+    slug: "express-delivery",
+    icon: "⚡",
+    title: "Express Delivery",
+    tagline: "When minutes matter — priority dispatch for your most time-sensitive shipments.",
+    heroSubheading:
+      "Global Enterprises Solutions & Services LLC provides express delivery service for clients who cannot afford to wait. From the moment you call, we dispatch immediately and take the most direct route to your destination — no stops, no delays.",
+    deliverablesIntro:
+      "Our express service is built for situations where standard delivery timelines simply aren't an option. We handle urgent shipments across every industry:",
+    deliverables: [
+      { icon: "📋", label: "Time-Sensitive Documents" },
+      { icon: "🏥", label: "Urgent Medical Supplies" },
+      { icon: "⚙️", label: "Critical Parts & Components" },
+      { icon: "💼", label: "Priority Business Cargo" },
+      { icon: "⚖️", label: "Rush Legal Filings" },
+      { icon: "🚛", label: "Emergency Freight" },
+    ],
+    howItWorksIntro:
+      "Express delivery with Global Enterprises Solutions & Services LLC is straightforward — you call, we move. Here's how our priority dispatch process works:",
+    overviewHeading: "Express Delivery Overview",
+    overview:
+      "When a shipment cannot wait, Global Enterprises Solutions & Services LLC dispatches immediately with no intermediate stops. Our express delivery service is a dedicated, point-to-point run — your cargo goes directly from pickup to destination with real-time communication throughout.\n\nWe serve clients across industries including healthcare, legal, manufacturing, and business services. Whether it's a critical component needed on a production floor, a filing due before a court closes, or emergency medical supplies for a healthcare facility, our drivers are trained to move fast without cutting corners on care or documentation.\n\nEvery express delivery includes confirmation documentation and direct driver contact from pickup to drop-off. Contact us the moment you need it — we're ready.",
+  },
+  {
+    slug: "white-glove-services",
+    icon: "🤍",
+    title: "White Glove Services",
+    tagline: "Premium handling, careful placement, and full accountability for high-value or sensitive deliveries.",
+    heroSubheading:
+      "Some shipments require more than just getting there — they require expertise, extra care, and hands-on placement. Global Enterprises Solutions & Services LLC provides white glove delivery service for clients who need their items handled with the highest level of professionalism.",
+    deliverablesIntro:
+      "Our white glove service is designed for shipments where the standard approach isn't enough. We handle high-value, fragile, and specialized cargo with the care it demands:",
+    deliverables: [
+      { icon: "🏥", label: "Medical Devices & Instruments" },
+      { icon: "🖥️", label: "Electronics & Technology" },
+      { icon: "🛋️", label: "Furniture & Large Items" },
+      { icon: "🎨", label: "Artwork & Specialty Items" },
+      { icon: "📦", label: "High-Value Equipment" },
+      { icon: "🔬", label: "Sensitive Lab Equipment" },
+    ],
+    howItWorksIntro:
+      "Our white glove process goes beyond standard delivery — we handle every detail from pickup through placement:",
+    overviewHeading: "White Glove Services Overview",
+    overview:
+      "White glove delivery from Global Enterprises Solutions & Services LLC means your shipment receives dedicated, careful handling from the moment it's picked up to the moment it's placed in its final position. We don't leave items at the door — we bring them in, position them, and remove packaging when needed.\n\nThis service is ideal for hospitals receiving sensitive medical instruments, businesses taking delivery of high-value electronics, or any client whose cargo requires more than a standard drop-off. Our trained staff treats every item as if it's irreplaceable — because often, it is.\n\nAll white glove deliveries include full documentation, professional handling, and direct communication with your receiving team. Contact us to discuss your specific requirements.",
+  },
+  {
+    slug: "tsa-hazmat",
+    icon: "☢️",
+    title: "TSA Hazmat Transport",
+    tagline: "Certified hazardous materials transport — fully compliant, safely handled, and thoroughly documented.",
+    heroSubheading:
+      "Global Enterprises Solutions & Services LLC provides certified hazardous materials transport with drivers holding CDL Class A licenses with active Hazmat endorsements, TWIC cards, and OSHA 40-hour HAZWOPER training. We move regulated cargo safely, legally, and with complete documentation.",
+    deliverablesIntro:
+      "Our Hazmat-certified drivers and fully compliant fleet are equipped to transport a wide range of regulated materials:",
+    deliverables: [
+      { icon: "🧪", label: "Chemicals & Solvents" },
+      { icon: "🔥", label: "Flammables & Compressed Gases" },
+      { icon: "⚠️", label: "OSHA-Classified Hazardous Materials" },
+      { icon: "🏭", label: "Industrial & Manufacturing Cargo" },
+      { icon: "🧴", label: "Regulated Cleaning & Lab Agents" },
+      { icon: "📋", label: "DOT-Regulated Shipments" },
+    ],
+    howItWorksIntro:
+      "Hazmat transport requires more than just a truck — it requires certification, planning, and documentation at every step. Here's how we handle it:",
+    overviewHeading: "TSA Hazmat Transport Overview",
+    overview:
+      "Transporting hazardous materials legally and safely requires certified personnel, proper equipment, and meticulous documentation. Global Enterprises Solutions & Services LLC meets those requirements with CDL Class A Hazmat-endorsed drivers, TWIC card holders, and staff trained under OSHA's 40-hour HAZWOPER standard (29 CFR 1910.120).\n\nWe handle the full compliance burden — proper placarding, manifest preparation, route planning in accordance with DOT and FMCSA regulations, and chain-of-custody records for every load. Our Confined Space and Bloodborne Pathogen certifications round out a team that understands regulated cargo at a level most couriers cannot match.\n\nWhether you're moving industrial chemicals, lab agents, or other DOT-regulated materials across Central Florida, Global Enterprises Solutions & Services LLC provides the certified capacity to do it right. Contact us to discuss your hazmat transport requirements.",
+  },
 ];
 
 export function getService(slug: string): ServiceItem | undefined {

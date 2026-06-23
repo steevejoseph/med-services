@@ -5,9 +5,12 @@ const columns = [
     heading: "Services",
     links: [
       { label: "Same Day Delivery", href: "/services/same-day-delivery" },
+      { label: "Express Delivery", href: "/services/express-delivery" },
       { label: "Medical Courier", href: "/services/medical-courier" },
       { label: "Legal Courier", href: "/services/legal-courier" },
       { label: "Same Day Freight", href: "/services/same-day-freight" },
+      { label: "White Glove Services", href: "/services/white-glove-services" },
+      { label: "TSA Hazmat Transport", href: "/services/tsa-hazmat" },
       { label: "Package Delivery", href: "/services/package-delivery" },
       { label: "Scheduled Routes", href: "/services/scheduled-routes" },
       { label: "View All Services →", href: "/services" },
@@ -39,9 +42,9 @@ export default function Footer() {
             Global Enterprises Solutions &amp; Services LLC
           </p>
           <p className="text-purple-400 leading-relaxed text-xs">
-            Our Central Florida–based medical courier and same day delivery
-            service is dedicated to providing every client with the best quality
-            in courier services, any time and every time.
+            Central Florida–based courier and logistics company serving
+            hospitals, law firms, businesses, and industries with on-demand
+            delivery, hazmat transport, and express solutions.
           </p>
           <div className="mt-4 space-y-1 text-xs text-purple-400">
             <p>

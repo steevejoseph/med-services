@@ -49,17 +49,17 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-brand-dark/75" />
         <div className="relative z-10 max-w-3xl mx-auto">
           <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">
-            Medical Courier &amp; Logistics Services
+            Courier &amp; Logistics Services — Central Florida
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
             Reliable. Credentialed. Ready.
           </h1>
           <p className="text-purple-200 text-lg leading-relaxed mb-10">
-            Global Enterprises Solutions &amp; Services LLC provides
-            professional same day delivery of medical devices, specimens,
-            pharmaceuticals, and more — serving hospitals and health providers
-            across Central Florida with full transparency on credentials and
-            compliance.
+            Global Enterprises Solutions &amp; Services LLC delivers on-demand
+            — same day, express, white glove, medical courier, legal courier,
+            freight, and TSA Hazmat transport. Credentialed, background-checked
+            drivers serving hospitals, law firms, businesses, and industries
+            across Central Florida.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -83,11 +83,11 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {[
             {
-              stat: "HIPAA & BBP Aware",
-              label: "Compliance-focused operations",
+              stat: "HIPAA & Hazmat Certified",
+              label: "Compliance across every cargo type",
             },
-            { stat: "On-Demand", label: "Flexible scheduling for facilities" },
-            { stat: "Vetted Staff", label: "Background-checked personnel" },
+            { stat: "On-Demand", label: "Express, same day, and scheduled" },
+            { stat: "Vetted Staff", label: "CDL-A, background-checked personnel" },
           ].map(({ stat, label }) => (
             <div key={stat}>
               <div className="text-2xl font-bold">{stat}</div>

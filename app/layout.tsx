@@ -9,7 +9,7 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 export const metadata: Metadata = {
   title: "Global Enterprises Solutions & Services LLC",
   description:
-    "Professional medical device delivery services for hospitals and health providers.",
+    "Professional courier and logistics services across Central Florida — same day delivery, medical courier, legal courier, express delivery, white glove, and TSA Hazmat transport.",
 };
 
 export default function RootLayout({

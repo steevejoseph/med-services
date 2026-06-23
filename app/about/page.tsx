@@ -15,7 +15,7 @@ const values = [
     icon: "⏱️",
     title: "Precision & Speed",
     description:
-      "Time-critical shipments require zero margin for error. We prioritize on-time delivery of medical specimens, pharmaceuticals, and sensitive materials without compromise.",
+      "Time-critical shipments require zero margin for error. We prioritize on-time delivery of specimens, legal filings, hazardous materials, and sensitive cargo without compromise.",
   },
   {
     icon: "🔒",
@@ -53,12 +53,12 @@ export default function AboutPage() {
             Our Mission
           </p>
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6">
-            Delivering Critical Healthcare Logistics with Unmatched Reliability
+            Credentialed Logistics for Every Industry — Not Just Healthcare
           </h1>
           <p className="text-purple-200 text-lg leading-relaxed">
-            Our specialized medical courier services provide secure, compliant,
-            and time-critical transportation for healthcare organizations that
-            demand precision, accountability, and exceptional service.
+            From medical specimens and legal filings to hazardous materials and
+            white glove deliveries, we bring the same compliance discipline and
+            operational accountability to every cargo type, every client, every time.
           </p>
         </div>
       </section>
@@ -69,26 +69,28 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-slate-800 mb-6">Who We Are</h2>
           <div className="space-y-4 text-slate-600 leading-relaxed">
             <p>
-              Global Enterprises Solutions &amp; Services LLC is a specialized
-              medical courier and logistics company based in Winter Garden,
-              Florida. We provide last-mile delivery of critical healthcare
-              materials — including medical specimens, pharmaceuticals,
-              supplies, and sensitive healthcare equipment — to hospitals and
-              health providers across the region.
+              Global Enterprises Solutions &amp; Services LLC is a
+              full-spectrum courier and logistics company based in Winter
+              Garden, Florida. We serve hospitals, law firms, businesses,
+              manufacturers, and institutions across Central Florida — handling
+              everything from same day package delivery and medical specimens to
+              TSA Hazmat transport, white glove installations, and express
+              priority dispatch.
             </p>
             <p>
               Founded on a commitment to compliance and operational excellence,
               we bring decades of professional transportation experience to
               every engagement. Our team holds active CDL Class A licenses,
               Hazmat and Tanker endorsements, TWIC cards, and HIPAA, Bloodborne
-              Pathogen, and OSHA certifications — credentials that meet the
-              rigorous standards healthcare organizations require from their
-              logistics partners.
+              Pathogen, and OSHA HAZWOPER certifications — credentials that
+              meet the rigorous standards of regulated industries and
+              institutional clients alike.
             </p>
             <p>
-              Whether the delivery is routine or time-critical, we operate with
-              the same discipline: documented procedures, vetted personnel, and
-              an unwavering focus on getting it right.
+              Whether the delivery is a routine run or a complex regulated
+              shipment, we operate with the same discipline: documented
+              procedures, vetted personnel, and an unwavering focus on getting
+              it right.
             </p>
           </div>
         </div>
