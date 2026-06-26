@@ -50,8 +50,21 @@ export default async function ServiceDetailPage({
   return (
     <div>
       {/* Hero */}
-      <section className="bg-brand-dark text-white py-16 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section
+        className="relative text-white py-20 px-6"
+        style={
+          svc.heroImage
+            ? {
+                backgroundImage: `url('${svc.heroImage}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : undefined
+        }
+      >
+        {svc.heroImage && <div className="absolute inset-0 bg-brand-dark/30" />}
+        {!svc.heroImage && <div className="absolute inset-0 bg-brand-dark" />}
+        <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">{svc.title}</h1>
           <p className="text-purple-200 text-lg leading-relaxed max-w-2xl mb-8">
             {svc.heroSubheading}

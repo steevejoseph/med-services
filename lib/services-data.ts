@@ -3,6 +3,7 @@ export type ServiceItem = {
   icon: string;
   title: string;
   tagline: string;
+  heroImage?: string;
   heroSubheading: string;
   deliverablesIntro: string;
   deliverables: { icon: string; label: string }[];
@@ -18,6 +19,8 @@ export const services: ServiceItem[] = [
     title: "Same Day Delivery",
     tagline:
       "Overnight delivery doesn't always do the trick — sometimes you need your packages delivered the same day.",
+    heroImage:
+      "https://images.pexels.com/photos/6940962/pexels-photo-6940962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC is a trusted provider of same day delivery and rush courier services across Central Florida. We're available on-demand so you'll always have access to our fast, reliable, and professional delivery expertise.",
     deliverablesIntro:
@@ -42,6 +45,8 @@ export const services: ServiceItem[] = [
     title: "Medical Courier Services",
     tagline:
       "Revitalize your patient care by streamlining your medical supply and equipment deliveries.",
+    heroImage:
+      "https://images.pexels.com/photos/36595248/pexels-photo-36595248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC offers a comprehensive selection of compliant and fast medical courier services for hospitals, clinics, laboratories, and health organizations across Central Florida. We have been delivering medical equipment, pharmaceuticals, and medical specimens to Florida health organizations with full HIPAA and OSHA compliance.",
     deliverablesIntro:
@@ -66,6 +71,8 @@ export const services: ServiceItem[] = [
     title: "Legal Courier Services",
     tagline:
       "Stay on top of your legal deadlines with our fast, reliable legal courier services.",
+    heroImage:
+      "https://images.pexels.com/photos/16603615/pexels-photo-16603615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC offers premium same day legal courier services throughout Central Florida. Our experienced team delivers legal documents with speed and security to courthouses, law firms, and clerk offices — on time, every time.",
     deliverablesIntro:
@@ -90,6 +97,8 @@ export const services: ServiceItem[] = [
     title: "Same Day Freight",
     tagline:
       "No job is too big — same day freight delivery for large cargo and palletized materials.",
+    heroImage:
+      "https://images.pexels.com/photos/11087837/pexels-photo-11087837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC can rush deliver large cargo and palletized materials to locations across Central Florida and surrounding areas. No job is too big when it comes to our same day freight delivery services.",
     deliverablesIntro:
@@ -114,6 +123,8 @@ export const services: ServiceItem[] = [
     title: "Package Delivery",
     tagline:
       "Fast, reliable package delivery for businesses and organizations that need it done right.",
+    heroImage:
+      "https://images.pexels.com/photos/4440774/pexels-photo-4440774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC provides professional package delivery services for businesses, healthcare organizations, and institutions across Central Florida. From single packages to multi-stop deliveries, our credentialed team gets it there on time.",
     deliverablesIntro:
@@ -138,6 +149,8 @@ export const services: ServiceItem[] = [
     title: "Scheduled Route Deliveries",
     tagline:
       "Predictable, recurring delivery schedules that reduce overhead and improve reliability for your facility.",
+    heroImage:
+      "https://images.pexels.com/photos/7706571/pexels-photo-7706571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC works with hospitals, clinics, laboratories, and businesses to establish recurring delivery routes that keep operations running smoothly. Consistent, on-time, and fully documented — every run.",
     deliverablesIntro:
@@ -161,6 +174,8 @@ export const services: ServiceItem[] = [
     icon: "⚡",
     title: "Express Delivery",
     tagline: "When minutes matter — priority dispatch for your most time-sensitive shipments.",
+    heroImage:
+      "https://images.pexels.com/photos/36500482/pexels-photo-36500482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC provides express delivery service for clients who cannot afford to wait. From the moment you call, we dispatch immediately and take the most direct route to your destination — no stops, no delays.",
     deliverablesIntro:
@@ -184,6 +199,8 @@ export const services: ServiceItem[] = [
     icon: "🤍",
     title: "White Glove Services",
     tagline: "Premium handling, careful placement, and full accountability for high-value or sensitive deliveries.",
+    heroImage:
+      "https://images.pexels.com/photos/6466483/pexels-photo-6466483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Some shipments require more than just getting there — they require expertise, extra care, and hands-on placement. Global Enterprises Solutions & Services LLC provides white glove delivery service for clients who need their items handled with the highest level of professionalism.",
     deliverablesIntro:
@@ -204,9 +221,11 @@ export const services: ServiceItem[] = [
   },
   {
     slug: "tsa-hazmat",
-    icon: "☢️",
+    icon: "⚠️",
     title: "TSA Hazmat Transport",
     tagline: "Certified hazardous materials transport — fully compliant, safely handled, and thoroughly documented.",
+    heroImage:
+      "https://images.pexels.com/photos/28447189/pexels-photo-28447189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&fit=crop",
     heroSubheading:
       "Global Enterprises Solutions & Services LLC provides certified hazardous materials transport with drivers holding CDL Class A licenses with active Hazmat endorsements, TWIC cards, and OSHA 40-hour HAZWOPER training. We move regulated cargo safely, legally, and with complete documentation.",
     deliverablesIntro:
