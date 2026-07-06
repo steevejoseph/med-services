@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { services } from "@/lib/services-data";
 
-const featuredServices = services.slice(0, 4);
+const featuredSlugs = ["medical-courier", "legal-courier", "same-day-freight", "tsa-hazmat"];
+const featuredServices = featuredSlugs.map((slug) => services.find((s) => s.slug === slug)!);
 
 const nav = [
   {
@@ -113,7 +114,9 @@ export default function HomePage() {
                 href={`/services/${svc.slug}`}
                 className="group flex gap-5 bg-slate-50 hover:bg-white border border-slate-200 hover:border-brand-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-all"
               >
-                <span className="text-3xl shrink-0 mt-0.5">{svc.icon}</span>
+                {svc.iconImg
+                  ? <img src={svc.iconImg} alt={svc.title} className="w-8 h-8 shrink-0 mt-0.5 object-contain" />
+                  : <span className="text-3xl shrink-0 mt-0.5">{svc.icon}</span>}
                 <div>
                   <h3 className="font-semibold text-slate-800 mb-1 group-hover:text-brand transition-colors">
                     {svc.title}

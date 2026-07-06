@@ -1,12 +1,13 @@
 export type ServiceItem = {
   slug: string;
   icon: string;
+  iconImg?: string;
   title: string;
   tagline: string;
   heroImage?: string;
   heroSubheading: string;
   deliverablesIntro: string;
-  deliverables: { icon: string; label: string }[];
+  deliverables: { icon: string; iconImg?: string; label: string }[];
   howItWorksIntro: string;
   overviewHeading: string;
   overview: string;
@@ -222,6 +223,7 @@ export const services: ServiceItem[] = [
   {
     slug: "tsa-hazmat",
     icon: "⚠️",
+    iconImg: "/assets/hazmat-icon.png",
     title: "TSA Hazmat Transport",
     tagline: "Certified hazardous materials transport — fully compliant, safely handled, and thoroughly documented.",
     heroImage:
@@ -233,7 +235,7 @@ export const services: ServiceItem[] = [
     deliverables: [
       { icon: "🧪", label: "Chemicals & Solvents" },
       { icon: "🔥", label: "Flammables & Compressed Gases" },
-      { icon: "⚠️", label: "OSHA-Classified Hazardous Materials" },
+      { icon: "⚠️", iconImg: "/assets/hazmat-icon.png", label: "OSHA-Classified Hazardous Materials" },
       { icon: "🏭", label: "Industrial & Manufacturing Cargo" },
       { icon: "🧴", label: "Regulated Cleaning & Lab Agents" },
       { icon: "📋", label: "DOT-Regulated Shipments" },

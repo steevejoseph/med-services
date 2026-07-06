@@ -96,12 +96,14 @@ export default async function ServiceDetailPage({
             {svc.deliverablesIntro}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {svc.deliverables.map(({ icon, label }) => (
+            {svc.deliverables.map(({ icon, iconImg, label }) => (
               <div
                 key={label}
                 className="flex flex-col items-center justify-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-4 py-6 text-center"
               >
-                <span className="text-3xl">{icon}</span>
+                {iconImg
+                  ? <img src={iconImg} alt={label} className="w-8 h-8 object-contain" />
+                  : <span className="text-3xl">{icon}</span>}
                 <span className="text-slate-700 text-sm font-medium">
                   {label}
                 </span>

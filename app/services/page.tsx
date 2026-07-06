@@ -50,7 +50,11 @@ export default function ServicesPage() {
               className="border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col"
             >
               <div className="bg-slate-50 px-8 pt-8 pb-6 flex-1">
-                <div className="text-4xl mb-4">{svc.icon}</div>
+                <div className="mb-4">
+                  {svc.iconImg
+                    ? <img src={svc.iconImg} alt={svc.title} className="w-10 h-10 object-contain" />
+                    : <span className="text-4xl">{svc.icon}</span>}
+                </div>
                 <h2 className="text-xl font-bold text-slate-800 mb-3">
                   {svc.title}
                 </h2>
